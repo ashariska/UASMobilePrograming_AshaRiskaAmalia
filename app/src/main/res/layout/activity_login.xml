@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Login"
+    android:background="@color/teal_700"
+    >
+
+    <TextView
+        android:id="@+id/tekslogin"
+        android:layout_marginTop="54dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SELAMAT DATANG"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        />
+
+    <EditText
+        android:id="@+id/editekuser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tekslogin"
+        android:layout_marginTop="54dp"
+        android:hint="@string/hintusername"
+        android:textColorHint="@color/teal_700"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/roundedcorner"
+        android:drawablePadding="15dp"
+        android:inputType="text"
+        android:minHeight="10dp"
+        android:paddingHorizontal="15dp"
+        android:textColor="@color/teal_700"
+        />
+
+    <EditText
+        android:id="@+id/editekpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editekuser"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/roundedcorner"
+        android:hint="@string/hintpassword"
+        android:textColorHint="@color/teal_700"
+        android:inputType="textPassword"
+        android:minHeight="10dp"
+        android:paddingHorizontal="15dp"
+        android:drawablePadding="15dp"
+        android:textColor="@color/teal_700"
+        />
+
+    <Button
+        android:id="@+id/tombollogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editekpassword"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/roundedcorner"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:text="@string/hintbutton"
+        android:textColor="@color/teal_700"
+        android:textStyle="bold" />
+
+</RelativeLayout>
